@@ -1,9 +1,8 @@
 terraform {
   backend "s3" {
     bucket = "ktoyod-terraform-template-dev"
-    key    = "terraform.tfstate" # Same as the default
+    key    = "terraform-project-template.tfstate"
 
-    profile = "default"
-    region  = "ap-northeast-1"
+    region = "ap-northeast-1"
   }
 }
