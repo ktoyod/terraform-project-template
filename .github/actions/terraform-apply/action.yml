@@ -1,6 +1,6 @@
-name: terraform-plan
+name: terraform-apply
 author: ktoyod
-description: execute terraform plan and show results
+description: execute terraform apply
 inputs:
   terraform-exec-directory:
     description: The directory where terraform is executed
