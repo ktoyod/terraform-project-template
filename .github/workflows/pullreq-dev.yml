@@ -22,7 +22,8 @@ jobs:
         with:
           role-to-assume: ${{ secrets.OIDC_ROLE_DEV }}
           aws-region: ap-northeast-1
-      - uses: ./.github/actions/terraform-plan
+      - name: terraform plan
+        uses: ./.github/actions/terraform-plan
         with:
           terraform-home-directory: terraform
           terraform-exec-directory: terraform/aws/environments/dev
